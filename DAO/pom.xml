@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>EmotionWebApp</groupId>
+		<artifactId>EmotionWebApp</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>DAO</artifactId>
+	<name>Emotion Dao</name>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+				<dependency>
+		   <groupId>org.springframework.security</groupId>  
+		   <artifactId>spring-security-web</artifactId>  
+		   <version>${spring.security.version}</version>  
+		  </dependency>  
+	<dependency>  
+		   <groupId>org.springframework.security</groupId>  
+		   <artifactId>spring-security-config</artifactId>  
+		   <version>${spring.security.version}</version>  
+		  </dependency>  
+	
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.38</version>
+		</dependency>
+		<!-- mongodb java driver -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.13.0</version>
+		</dependency>
+
+		<!-- Spring data mongodb -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+			<version>1.5.1.RELEASE</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>EmotionWebApp</groupId>
+			<artifactId>CommonUtils</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	 <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-context</artifactId>
+         <version>4.1.1.RELEASE</version>
+      </dependency>
+     
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>EmotionWebApp</groupId>
+				<artifactId>CommonUtils</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
